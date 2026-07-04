@@ -2,9 +2,28 @@
 
 > **"Visualizing the Real Structure of the Mexican State."**
 
-![Prototype](https://img.shields.io/badge/Status-Prototype-orange)
+![Concept](https://img.shields.io/badge/Status-Concept%20%2F%20Design-red)
 
 **NexoGob** is an open-source intelligence engine designed to aggregate, map, and analyze the entire digital footprint of the Mexican government. By treating the government's web presence as a mathematical graph, we move beyond simple document search to reveal the *de facto* structure of the bureaucracy, uncovering hidden dependencies, broken administrative chains, and patterns indicative of corruption.
+
+## Current Status (2026-07-04)
+
+NexoGob is a **concept / design document. There is no code in this repository.**
+
+- The repo contains three markdown files (this README, `PRD.md`, and
+  `ONTOLOGY.md`) — no crawler, no `docker-compose.yml`, no `frontend/`, no npm
+  scripts, and no `CONTRIBUTING.md` or `LICENSE` file yet, despite references
+  below.
+- The "Getting Started" section describes the **intended** developer experience;
+  none of those commands can currently be run.
+- Roadmap "Phase 1 (Atlas)" reflects **design work only** — no crawling or
+  graph infrastructure has been built.
+- A likely implementation path is to integrate with
+  [tezca](https://github.com/madfam-org/tezca) (MADFAM's Mexican
+  legal/compliance corpus platform) for legal-entity and official-source data,
+  rather than building all ingestion from scratch.
+
+Everything below is **vision/roadmap** for the system as designed.
 
 -----
 
@@ -53,7 +72,7 @@ NexoGob uses a hybrid crawling strategy to handle both legacy server infrastruct
 
 -----
 
-## ⚡ Getting Started
+## ⚡ Getting Started (planned — not yet runnable)
 
 ### Prerequisites
 
@@ -137,7 +156,7 @@ NexoGob uses a hybrid crawling strategy to handle both legacy server infrastruct
 
 ## 🗺️ Roadmap
 
-  * [x] **Phase 1 (Atlas):** Core crawling of `gob.mx` and Neo4j setup.
+  * [ ] **Phase 1 (Atlas):** Core crawling of `gob.mx` and Neo4j setup. *(designed, not yet implemented — see Current Status)*
   * [ ] **Phase 2 (Deep Dive):** Integration of State and Municipal domains + OCR for PDF scanning.
   * [ ] **Phase 3 (The Analyst):** Implementation of "Bid-Rigging Detection" algorithms (Cycle detection).
   * [ ] **Phase 4 (Public Access):** Release of the public-facing API and "State of the Digital Union" report.
